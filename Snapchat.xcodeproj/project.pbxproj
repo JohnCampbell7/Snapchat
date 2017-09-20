@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214FC72B1F7305D500FD8C15 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */; };
 		21AE60061F71B0960084D3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE60051F71B0960084D3E9 /* AppDelegate.swift */; };
 		21AE60081F71B0960084D3E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE60071F71B0960084D3E9 /* SignInViewController.swift */; };
 		21AE600B1F71B0960084D3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AE60091F71B0960084D3E9 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnapsViewController.swift; path = ../../../../../Applications/SnapsViewController.swift; sourceTree = "<group>"; };
 		21AE60021F71B0960084D3E9 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AE60051F71B0960084D3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21AE60071F71B0960084D3E9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				21AE60051F71B0960084D3E9 /* AppDelegate.swift */,
 				21AE60071F71B0960084D3E9 /* SignInViewController.swift */,
+				214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */,
 				21AE60091F71B0960084D3E9 /* Main.storyboard */,
 				21AE600C1F71B0960084D3E9 /* Assets.xcassets */,
 				21AE600E1F71B0960084D3E9 /* LaunchScreen.storyboard */,
@@ -204,12 +207,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +233,7 @@
 			files = (
 				21AE60081F71B0960084D3E9 /* SignInViewController.swift in Sources */,
 				21AE60061F71B0960084D3E9 /* AppDelegate.swift in Sources */,
+				214FC72B1F7305D500FD8C15 /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
