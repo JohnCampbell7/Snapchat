@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210444F81F9E89F800B46011 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210444F71F9E89F800B46011 /* PictureViewController.swift */; };
 		214FC72B1F7305D500FD8C15 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */; };
 		21AE60061F71B0960084D3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE60051F71B0960084D3E9 /* AppDelegate.swift */; };
 		21AE60081F71B0960084D3E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE60071F71B0960084D3E9 /* SignInViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210444F71F9E89F800B46011 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureViewController.swift; path = ../../PictureViewController.swift; sourceTree = "<group>"; };
 		214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnapsViewController.swift; path = ../../../../../Applications/SnapsViewController.swift; sourceTree = "<group>"; };
 		21AE60021F71B0960084D3E9 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AE60051F71B0960084D3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				21AE60071F71B0960084D3E9 /* SignInViewController.swift */,
 				214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */,
 				21AE60091F71B0960084D3E9 /* Main.storyboard */,
+				210444F71F9E89F800B46011 /* PictureViewController.swift */,
 				21AE600C1F71B0960084D3E9 /* Assets.xcassets */,
 				21AE600E1F71B0960084D3E9 /* LaunchScreen.storyboard */,
 				21AE60111F71B0960084D3E9 /* Info.plist */,
@@ -124,7 +127,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "John Campbell";
 				TargetAttributes = {
 					21AE60011F71B0960084D3E9 = {
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21AE60081F71B0960084D3E9 /* SignInViewController.swift in Sources */,
+				210444F81F9E89F800B46011 /* PictureViewController.swift in Sources */,
 				21AE60061F71B0960084D3E9 /* AppDelegate.swift in Sources */,
 				214FC72B1F7305D500FD8C15 /* SnapsViewController.swift in Sources */,
 			);
@@ -269,7 +273,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -277,7 +283,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -320,7 +330,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -328,7 +340,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

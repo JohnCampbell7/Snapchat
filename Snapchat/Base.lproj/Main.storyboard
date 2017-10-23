@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,11 +96,77 @@
                                 <action selector="logoutTapped:" destination="h9T-6D-DFN" id="Q9E-d5-a2r"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nzq-XF-heR">
+                            <connections>
+                                <segue destination="ZkD-n8-oJa" kind="show" id="wNY-6i-xPf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1j-NB-VYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1577" y="126"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="7Gb-dG-97d">
+            <objects>
+                <viewController id="ZkD-n8-oJa" customClass="PictureViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RKs-xS-eV8"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6I-0p-DIr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d28-Sc-U42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JhO-La-eIC">
+                                <rect key="frame" x="67" y="84" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Qvs-sn-fv9"/>
+                                    <constraint firstAttribute="width" constant="240" id="pjc-q1-Gbx"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFp-v4-9Gz">
+                                <rect key="frame" x="67.5" y="227" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH9-Ox-blN">
+                                <rect key="frame" x="171.5" y="285" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="ZkD-n8-oJa" eventType="touchUpInside" id="9r4-I7-rgd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JhO-La-eIC" firstAttribute="top" secondItem="RKs-xS-eV8" secondAttribute="bottom" constant="20" id="584-8t-lUA"/>
+                            <constraint firstItem="sH9-Ox-blN" firstAttribute="centerX" secondItem="d28-Sc-U42" secondAttribute="centerX" id="616-Rg-u5p"/>
+                            <constraint firstItem="sH9-Ox-blN" firstAttribute="top" secondItem="YFp-v4-9Gz" secondAttribute="bottom" constant="28" id="PJb-0V-iIF"/>
+                            <constraint firstItem="YFp-v4-9Gz" firstAttribute="top" secondItem="JhO-La-eIC" secondAttribute="bottom" constant="15" id="VKU-aj-QkL"/>
+                            <constraint firstItem="YFp-v4-9Gz" firstAttribute="width" secondItem="JhO-La-eIC" secondAttribute="width" id="fSq-Ns-GrO"/>
+                            <constraint firstItem="YFp-v4-9Gz" firstAttribute="centerX" secondItem="d28-Sc-U42" secondAttribute="centerX" id="p0L-27-eHc"/>
+                            <constraint firstItem="JhO-La-eIC" firstAttribute="centerX" secondItem="d28-Sc-U42" secondAttribute="centerX" id="sHt-IJ-E7b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bY5-eu-RXi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="RQ4-lU-y42">
+                            <connections>
+                                <action selector="cameraTapped:" destination="ZkD-n8-oJa" id="xRO-0E-y9H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="YFp-v4-9Gz" id="Umt-Tt-9De"/>
+                        <outlet property="imageView" destination="JhO-La-eIC" id="MsO-1L-RaB"/>
+                        <outlet property="nextButton" destination="sH9-Ox-blN" id="SDt-bU-FxE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auE-KQ-bni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2423" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="okt-iV-56s">
