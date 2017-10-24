@@ -70,8 +70,8 @@
 				21AE60051F71B0960084D3E9 /* AppDelegate.swift */,
 				21AE60071F71B0960084D3E9 /* SignInViewController.swift */,
 				214FC72A1F7305D500FD8C15 /* SnapsViewController.swift */,
-				21AE60091F71B0960084D3E9 /* Main.storyboard */,
 				210444F71F9E89F800B46011 /* PictureViewController.swift */,
+				21AE60091F71B0960084D3E9 /* Main.storyboard */,
 				21AE600C1F71B0960084D3E9 /* Assets.xcassets */,
 				21AE600E1F71B0960084D3E9 /* LaunchScreen.storyboard */,
 				21AE60111F71B0960084D3E9 /* Info.plist */,
@@ -133,6 +133,7 @@
 					21AE60011F71B0960084D3E9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = R6849ERWR9;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -380,7 +381,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JayC.Snapchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -394,7 +396,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JayC.Snapchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
